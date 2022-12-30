@@ -1,0 +1,37 @@
+{
+  "name": "nextjs",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3004",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.10.5",
+    "@emotion/react": "^11.10.5",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.2",
+    "@mui/styles": "^5.11.2",
+    "@next/font": "^13.1.1",
+    "bcryptjs": "^2.4.3",
+    "moment": "^2.29.4",
+    "next": "latest",
+    "next-auth": "^4.18.7",
+    "prop-types": "latest",
+    "react": "17.0.2",
+    "react-dom": "latest",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "^4.9.4"
+  }
+}

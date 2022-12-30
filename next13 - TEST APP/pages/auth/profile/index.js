@@ -2,9 +2,11 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { Container } from '@mui/material';
+import Box from '@mui/material/Box';
 import moment from 'moment';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+
 import { getSession } from "next-auth/react"
 import { useRouter } from 'next/router';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
@@ -15,6 +17,8 @@ import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+
+
 
 export default function UserProfilePage({session}) {
     
@@ -121,10 +125,15 @@ export default function UserProfilePage({session}) {
       </>
     );
   }
-  else return <Typography variant="h3" align="center"> Access Denied </Typography>    
+  else return <Typography variant="h3" align="center"> Access Denied </Typography>
+  
+
+  
 }
 
-export async function getServerSideProps(context) {    
+
+export async function getServerSideProps(context) {
+    
   return {
     props: {      
       session: await getSession(context)
